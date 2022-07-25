@@ -1,0 +1,54 @@
+{% extends 'main/index.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row pt-3 mx-3">
+        <div class="col-sm-4">
+            <div class="d-grid gap-2">
+                <h3 class="btn btn-warning btn-lg disabled">Original Image</h3>
+            </div>
+            <div class="h-100 border text-center">
+                <img src="https://cdn1.vectorstock.com/i/thumb-large/75/95/cat-sad-head-face-silhouette-icon-hands-paw-vector-21157595.jpg"
+                    alt="Original image" id="original-image" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="d-grid gap-2">
+                <h3 class="btn btn-success btn-lg disabled">Processed Image</h3>
+            </div>
+            <div class="h-100 border text-center">
+                <img src="https://cdn1.vectorstock.com/i/thumb-large/75/95/cat-sad-head-face-silhouette-icon-hands-paw-vector-21157595.jpg"
+                    alt="Processed Image" id="processed-image" class="img-fluid">
+            </div>
+
+        </div>
+        <div class="col-sm-4">
+            <div class="d-grid gap-2">
+                <h3 class="btn btn-primary btn-lg disabled">Results</h3>
+
+                <div class="normal mt-5">
+                    <h5>Normal</h5>
+                    <div class="progress" style="height: 30px">
+                        <div class="progress-bar bg-success" role="progressbar" name="normal" style="width: 25%;"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                </div>
+                <div class="benign mt-5">
+                    <h5>Benign</h5>
+                    <div class="progress" style="height: 30px">
+                        <div class="progress-bar bg-warning" role="progressbar" name="normal" style="width: 25%;"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                </div>
+                <div class="cancer mt-5">
+                    <h5>Cancer</h5>
+                    <div class="progress" style="height: 30px">
+                        <div class="progress-bar bg-danger" role="progressbar" name="normal" style="width: 25%;"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+{% endblock content %}
